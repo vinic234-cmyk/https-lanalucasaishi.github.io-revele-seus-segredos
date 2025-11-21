@@ -3,9 +3,11 @@ const choices = document.getElementById("choices");
 const msg = document.getElementById("msgBox");
 const foto = document.getElementById("foto");
 const btnNao = document.getElementById("btnNao"); // botão NÃO
+const music = document.getElementById("music");
 
 // Clicar no coração abre as escolhas
 heart.addEventListener("click", () => {
+    music.play(); // 🔊 começa a tocar ao clicar
     heart.style.display = "none";
     choices.style.display = "block";
 });
